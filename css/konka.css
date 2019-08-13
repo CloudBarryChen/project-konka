@@ -1,0 +1,218 @@
+body{
+    background: #f7f7f7;
+    min-width: 1140px;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+#lxheader{
+    padding-top: 100px;
+}
+/* 版心 */
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.headline{
+    height: 20px;
+    margin-bottom: 10px;
+    
+}
+.headline span{
+    float: left;
+    margin: 0 5px;
+    color: #ccc;
+}
+.headline li{
+    float: left;
+}
+.headline li a{
+    font-size: 14px;
+    color: #333;
+}
+.headline>.active{
+    font-size: 14px;
+    color: #777777;
+}
+/* 导航表主体 */
+.panel{
+    width: 1138px;
+    height: 204px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+.panel>dl>dt{
+    width: 85px;
+    height: 40px;
+    text-align: left;
+    padding: 0 0 0 15px;
+    line-height: 40px;
+    background: #ececec;
+    border-left: 1px solid #e0e0e0;
+    font-weight: 600;
+    float: left;
+}
+.panel>dl>dd{
+    height: 40px;
+    background: white;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.panel .list-inline li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 35px;
+}
+.panel .list-inline li a:hover{
+    color: #da2a2a;
+}
+.panel .list-inline li .active:hover{
+    color: white;
+}
+.panel>dl>dd>ul>li .active{
+    color: white;
+    background: red;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+/* 内容区 */
+.goods-list{
+    height: 1860px;
+}
+.goods-list .panel{
+    width: 1140px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #eee;
+}
+.goods-list .panel .btn-group{
+    height: 40px;
+    position: relative;
+    display: inline-block;
+}
+.goods-list .panel .defaultBtn{
+    display: inline-block;
+    width: 80px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    color: #da2a2a;
+    background: white;
+    border-top:3px solid #da2a2a
+}
+.goods-list .panel .btn-default{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+}
+.goods-list .arow{
+   position: absolute;
+   display: inline-block;
+    width: 80px;
+    right: 0;
+}
+.goods-list .arow .num{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    line-height: 40px;
+}
+.btn-group .btn-sm {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 1px;
+}
+.btn-group .btn-sm .prev{
+    display: inline-block;
+    position: absolute;
+    background: #ccc;
+    width: auto;
+    height: auto;
+}
+.btn-group .btn-sm .next{
+    display: inline-block;
+    position: absolute;
+    background: #ccc;
+    width: auto;
+    height: auto;
+}
+/* 图片内容 */
+.row{
+    min-height: 1800px;
+}
+.cols{
+    width: 250px;
+    height: 320px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.cola{
+    margin-left: 0;
+}
+.cols .figure{
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    float: left;
+}
+.cols .figure a img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.cols .figure-title{
+    line-height: 35px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.cols .figureColor{
+    color: #989898;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: inherit;
+}
+.cols .price{
+    display: block;
+    opacity: 1;
+    color: #da2a2a;
+    margin: 0 0 10px;
+}
+.pagination{
+    margin-top: 0;
+    float: right;
+    width: 198px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background: white;
+}
+.pagination li{
+    float: left;
+}
+.pagination li a{
+    display: inline-block;
+    width: 31px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    border-bottom: 0;
+}
