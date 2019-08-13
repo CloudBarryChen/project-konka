@@ -38,13 +38,14 @@
 
                 <div>
                         <label for="ucode" class="col-md-2 control-label labels">验证码</label>
-                        <div class="col-md-5">
+                        <div class="col-md-4">
                            <input type="text" id="ucode" placeholder="请输入验证码" class="inputs" required autocomplete="off"/>
                         </div> 
 
-                        <div class="col-md-5">
-                               <div id="code">1234</div>
-                               <button type="button" class="btn btn-link btn-sm chage" >更换验证码</button>
+                        <div class="col-md-6">
+                                <canvas id="canvas" width="80" height="34" style="background: #ccc"></canvas>
+                               <!-- <div id="code">1234</div> -->
+                               <button type="button" class="btn btn-link btn-sm " id="change" >更换验证码</button>
                         </div> 
                 </div>
 
@@ -73,11 +74,14 @@
    </div>
    <div id="footer"></div>
     <script src="./js/jquery1.12.4.js"></script>
+    
     <script>
        $(document).ready(function(){
         $('#header').load('./head.html');
         $('#footer').load('./foot.html');
         });
+        
     </script>
+    <script src="./js/all.js"></script>
 </body>
 </html>
