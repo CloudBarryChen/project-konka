@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body,html{
+	color: #999;
+	font: 12px "微软雅黑";
+}
+
+h1,h2,h3,h4,h5,h6,b,string{
+	font-weight: normal;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: #ccc;
+}
+
+img{
+	border: 0;
+}
+
+input{
+	outline: none;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.clearfix:after{
+	content: ' ';
+	display: block;
+	height:0;
+	clear: both;
+	overflow: hidden;
+}
