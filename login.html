@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="./js/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/StyleReset.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
+</head>
+<body>
+    <div id="header"></div>
+    
+   <div class="main-content">
+    <div class="main">
+        <div class="login-form">
+            <div class="login-h">
+                会员登录
+                <a href="###" id="register">立即注册为会员</a>
+            </div>
+            <form action="" id="u-info">
+                <div>
+                    <label for="uname" class="col-md-2 control-label labels">账号</label>
+                    <div class="col-md-10" style="padding: 0 15px">
+                      <input type="text" id="uname" placeholder="手机号/邮箱/用户名" class="inputs" required autocomplete="off"/>   
+                    </div>
+                   
+                </div>
+
+                <div>
+                        <label for="password" class="col-md-2 control-label labels">账号</label>
+                        <div class="col-md-10" style="padding: 0 15px">
+                          <input type="password" id="password" placeholder="请输入密码" class="inputs" required autocomplete="off"/>
+                        </div>
+                    </div>
+
+                <div>
+                        <label for="ucode" class="col-md-2 control-label labels">验证码</label>
+                        <div class="col-md-5">
+                           <input type="text" id="ucode" placeholder="请输入验证码" class="inputs" required autocomplete="off"/>
+                        </div> 
+
+                        <div class="col-md-5">
+                               <div id="code">1234</div>
+                               <button type="button" class="btn btn-link btn-sm chage" >更换验证码</button>
+                        </div> 
+                </div>
+
+                <div style="text-align: left">
+                        <div class="col-md-offset-2 col-md-5">
+                            <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="autologin-checkbox"> 自动登录
+                            </label>
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <a href="###">忘记密码?</a>
+                        </div>
+                </div>
+
+                <div>
+                        <div class="col-md-offset-2 col-md-10" style="text-align: left">
+                                <button type="submit" data-loading-text="正在登录..." class="btn btn-danger">登录</button>
+                        </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+   </div>
+   <div id="footer"></div>
+    <script src="./js/jquery1.12.4.js"></script>
+    <script>
+       $(document).ready(function(){
+        $('#header').load('./head.html');
+        $('#footer').load('./foot.html');
+        });
+    </script>
+</body>
+</html>

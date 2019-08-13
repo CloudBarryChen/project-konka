@@ -1,0 +1,281 @@
+/* 头部样式开始 */
+.main,.footer,.footer-links{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #333;
+}
+.header-c  a{
+  color: #b0b0b0;
+}
+.spa{
+    margin: 0 .5em;
+    color: #424242;
+}
+.car,.info{
+    float: right;
+}
+.car{
+    padding: 0 19px;
+    background: #424242;
+    margin-left: 15px;
+}
+.car img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top:-3px; 
+}
+#fluid-bar{
+    height: 50px;
+    background: #f4f4f4;
+}
+.fluid-c{
+    z-index: 100;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.3);
+    height: 50px;
+    line-height: 50px;
+    width: 1140px;
+    background: #f4f4f4;
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -570px;
+}
+.navs{
+    height: 50px;
+}
+.navs li a{
+    width: 72px;
+    display: block;
+    color: #767676;
+    font-size: 14px;
+}
+.navs li a:hover{
+    color: red;
+    background: white;
+}
+#logo{
+   width: 120px;
+   margin: 0 15px;
+}
+#logo:hover{
+    background: #f4f4f4;
+}
+.navs img{
+    vertical-align: middle
+}
+
+/* 头部样式中的子菜单 */
+.item{
+    width:100%;
+    position: absolute;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    display: none;
+}
+.hov{
+    display: none;
+}
+.item img{
+    width: 160px;
+    height: 160px;
+}
+.ellipsis{
+     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #222;
+    line-height: 30px;
+    text-align: center;
+}
+.describe{
+    color: #989898;
+    font-size: 14px;
+    line-height: 30px;
+}
+.money{
+    color: #ed1c24;
+    line-height: 30px;
+    margin-bottom:40px; 
+    font-size: 14px;
+}
+.container{
+    height: 50px;
+}
+#keyword{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: transparent;
+}
+.sea{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    margin-top: 10px;
+    outline: none;
+}
+.sea-bar{
+    display: none;
+    height: 50px;
+}
+#animateUl{
+    display: none;
+    background: white;
+    width: 80%;
+    float: right;
+    margin-top:-5px; 
+}
+#animateUl>li{
+float: none;
+height: 30px;
+line-height: 30px;
+width: 95%;
+margin: 0 auto;
+}
+#animateUl>li:hover{
+    background: #ccc;
+}
+#animateUl a{
+    font-size: 14px;
+}
+/* 头部样式中的子菜单 */
+
+/* 头部样式结束 */
+
+/* 底部样式开始 */
+
+.footer{
+    border-bottom:1px solid #ccc; 
+    padding: 40px 0 20px;
+}
+.list-service{
+    height: 54px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.list-service li{
+    float: left;
+    position: relative;
+    display: block;
+    width: 220px; 
+}
+.foo-con{
+    float: left;
+    margin: 12px 12px 0 0;
+}
+.foo-con img{
+    margin-top: -10px;
+}
+.foo-title{
+    width: 109px;
+    height: 54px;
+    margin-left: 40px;
+}
+.foo-title>h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: #b2b2b2;
+    text-align: left;
+}
+.foo-title small{
+    width: 109px;
+    display: block;
+    color: #b2b2b2;
+    text-align: left;
+}
+.footer-links{
+    padding: 50px 0;
+}
+.footer-links dl{
+    float: left;
+    width: 140px;
+}
+.footer-links dl>dt,dd{
+    line-height: 35px;
+    text-align: left;
+}
+.footer-links dl>dt{
+ color: #333;
+ font-weight: 700;
+ font-size: 14px;
+}
+.footer-links dl>dd>a{
+ color: #767676;
+}
+.footer-links dd a:hover{
+    color: #ff5d59;
+    }
+.links-iphone{
+    border-left: 1px solid #eaeaea;
+    width: 250px;
+    height: 125px;
+    float: right;
+    text-align: center;
+}
+.hotline{
+    font-size: 14px;
+    color: #6f6c71;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.tele{
+    color: #ff5d59;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.Customer{
+    border: 1px solid #ff5d59;
+    padding: 5px 10px;
+    color: #ff5d59;
+    font-size: 14px;
+}
+.Customer:hover{
+    color: #ff5d59;
+}
+.for-footer{
+    width: 100%;
+    height:100px;
+    background: #313131;
+    line-height: 100px;
+    padding: 0 100px;
+    clear: both;
+}
+
+.for-logo{
+    float: left;
+}
+.for-logo>img{
+    padding-top:40px; 
+}
+.for-link{
+    float: right;
+    color: #666666;
+}
+.for-link a{
+color: #666;
+}
+.for-link span{
+    margin-right: 5px;
+}
+.for-link>p{
+    display: inline-block;
+    color: #666666;
+}
+.for-security{
+    clear: both;
+    text-align: center;
+    height: 72px;
+}
+.for-security img{
+    margin-top:10px;
+}
+/* 底部样式结束 */
