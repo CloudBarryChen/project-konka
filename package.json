@@ -1,7 +1,6 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpTask.js",
   "dependencies": {
     "simple-proxies": "^1.0.0"
@@ -28,5 +27,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jlucky-Lee/konka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jlucky-Lee/konka/issues"
+  },
+  "homepage": "https://github.com/Jlucky-Lee/konka#readme",
+  "description": ""
 }
