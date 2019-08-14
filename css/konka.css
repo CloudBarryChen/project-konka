@@ -1,0 +1,264 @@
+body{
+    background: #f7f7f7;
+    min-width: 1140px;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+/* 头部 */
+#header{
+    height: 300px;
+    width: 1140px;
+    background: #333;
+    margin: 0 auto;
+}
+
+#main{
+    padding-top: 100px;
+}
+/* 版心 */
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.headline{
+    height: 20px;
+    margin-bottom: 10px;
+    
+}
+.headline span{
+    float: left;
+    margin: 0 5px;
+    color: #ccc;
+}
+.headline li{
+    float: left;
+}
+.headline li a{
+    font-size: 14px;
+    color: #333;
+}
+.headline>.active{
+    font-size: 14px;
+    color: #777777;
+}
+/* 导航表主体 */
+.panel{
+    width: 1138px;
+    height: 204px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+.panel>dl>dt{
+    width: 85px;
+    height: 40px;
+    text-align: left;
+    padding: 0 0 0 15px;
+    line-height: 40px;
+    background: #ececec;
+    border-left: 1px solid #e0e0e0;
+    font-weight: 600;
+    float: left;
+}
+.panel>dl>dd{
+    height: 40px;
+    background: white;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.panel .list-inline li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 35px;
+}
+.panel .list-inline li a:hover{
+    color: #da2a2a;
+}
+.panel .list-inline li .active:hover{
+    color: white;
+}
+.panel>dl>dd>ul>li .active{
+    color: white;
+    background: red;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+/* 内容区 */
+.star{
+    height: 1860px;
+}
+.star .panel{
+    width: 1140px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #eee;
+}
+.star .panel .btn-group{
+    height: 40px;
+    position: relative;
+    display: inline-block;
+}
+.star .panel .btn-default{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+}
+.star .panel .defaultBtn{
+    display: inline-block;
+    width: 80px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    color: #da2a2a;
+    background: white;
+    border-top:3px solid #da2a2a
+}
+.star .arow{
+   position: absolute;
+   display: inline-block;
+    width: 80px;
+    right: 0;
+}
+.star .arow .num{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    line-height: 40px;
+}
+.star .btn-sm {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 1px;
+}
+.star .btn-sm .prev{
+    display: inline-block;
+    position: absolute;
+    background: #ccc;
+    width: auto;
+    height: auto;
+}
+.star .btn-sm .next{
+    display: inline-block;
+    position: absolute;
+    background: #ccc;
+    width: auto;
+    height: auto;
+}
+/* 图片内容 */
+.row{
+    min-height: 1800px;
+    /* position: relative; */
+}
+.cols{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    float: left;
+    margin-left: 17px;
+    margin-bottom: 15px;
+}
+.cola:nth-child(4n+1){
+    margin-left: 0;
+}
+.cols .figure{
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    float: left;
+}
+.cols .figure a img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.cols .figure-title{
+    line-height: 35px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.cols .figureColor{
+    color: #989898;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: inherit;
+}
+.cols .price{
+    display: block;
+    opacity: 1;
+    color: #da2a2a;
+    margin: 0 0 10px;
+}
+/* 点击加入购物车 */
+.cols .cart{
+    position: absolute;
+    /* display: none; */
+}
+.cols .cart a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid #da2a2a;
+    color: #da2a2a;
+    display: none;
+}
+.cols .cart .a2{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #da2a2a;
+    color: white;
+    display: none;
+}
+/* 底部分页 */
+.pagination{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    float: right;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    /* border: 1px solid #e0e0e0; */
+    text-align: center;
+    background: white;
+}
+.pagination li{
+    float: left;
+}
+.pagination li a{
+    display: inline-block;
+    text-align: center;
+    width: 31px;
+    height: 33px;
+    line-height: 33px;
+    /* border: 1px solid #e0e0e0; */
+    border-top: 0;
+    border-bottom: 0;
+}
+/* 尾部 */
+/* #footer{
+    height: 300px;
+    width: 1140px;
+    background: #333;
+    margin: 0 auto;
+} */

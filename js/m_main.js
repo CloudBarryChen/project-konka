@@ -4,6 +4,10 @@ $(document).ready(function () {
     var $root = $('html, body');
     $('a').click(function () {
         var href = $.attr(this, 'href');
+        $root.stop(false, true);
+        // stop()可以停止动画,参数默认都是false
+        // 第一个参数:是否清空动画队列
+        // 第二个参数:是否立即完成当前动画
         $root.animate({
             scrollTop: $(href).offset().top
         }, 1000, function () {
