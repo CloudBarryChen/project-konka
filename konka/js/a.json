@@ -1,0 +1,162 @@
+[
+    {
+        "id":1,
+        "text":"立即购买",
+        "src":"./images/240b05aac7b0529b7f2c90db78696512835f8474.jpg",
+        "figureTitle":"65G10U 65吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥4699.00"
+    },
+    {
+        "id":2,
+        "text":"立即购买",
+        "src":"./images/240b05aac7b0529b7f2c90db78696512835f8474.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":3,
+        "text":"立即购买",
+        "src":"./images/39985c98cf84921c434a9f9f07580cb534c8b37d.jpg",
+        "figureTitle":"65A10  65吋4K超高清 超薄金属机身",
+        "figureColor":"3GB+64GB大内存 全景AI 三星全面屏 远场语音智能",
+        "price":"￥4699.00"
+    },
+    {
+        "id":4,
+        "text":"立即购买",
+        "src":"./images/de891205181a708afb6b632c4518aff7113c1e7c.jpg",
+        "figureTitle":"65G10U 65吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥4699.00"
+    },
+    {
+        "id":5,
+        "text":"立即购买",
+        "src":"./images/d6877dcda8d6f34c90546ada0acf976f1de696c1.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":6,
+        "text":"立即购买",
+        "src":"./images/4b361232df82cfd780873060b1f42b87684ecacc.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":7,
+        "text":"立即购买",
+        "src":"./images/eef64a585efa1d376ba3eb8ee452674f01d6e40b.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":8,
+        "text":"立即购买",
+        "src":"./images/39985c98cf84921c434a9f9f07580cb534c8b37d.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":9,
+        "text":"立即购买",
+        "src":"./images/240b05aac7b0529b7f2c90db78696512835f8474.jpg",
+        "figureTitle":"65G10U 65吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥4699.00"
+    },
+    {
+        "id":10,
+        "text":"立即购买",
+        "src":"./images/240b05aac7b0529b7f2c90db78696512835f8474.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":11,
+        "text":"立即购买",
+        "src":"./images/39985c98cf84921c434a9f9f07580cb534c8b37d.jpg",
+        "figureTitle":"65A10  65吋4K超高清 超薄金属机身",
+        "figureColor":"3GB+64GB大内存 全景AI 三星全面屏 远场语音智能",
+        "price":"￥4699.00"
+    },
+    {
+        "id":12,
+        "text":"立即购买",
+        "src":"./images/de891205181a708afb6b632c4518aff7113c1e7c.jpg",
+        "figureTitle":"65G10U 65吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥4699.00"
+    },
+    {
+        "id":13,
+        "text":"立即购买",
+        "src":"./images/d6877dcda8d6f34c90546ada0acf976f1de696c1.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":14,
+        "text":"立即购买",
+        "src":"./images/4b361232df82cfd780873060b1f42b87684ecacc.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":15,
+        "text":"立即购买",
+        "src":"./images/eef64a585efa1d376ba3eb8ee452674f01d6e40b.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":16,
+        "text":"立即购买",
+        "src":"./images/39985c98cf84921c434a9f9f07580cb534c8b37d.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":17,
+        "text":"立即购买",
+        "src":"./images/d6877dcda8d6f34c90546ada0acf976f1de696c1.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":18,
+        "text":"立即购买",
+        "src":"./images/4b361232df82cfd780873060b1f42b87684ecacc.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":19,
+        "text":"立即购买",
+        "src":"./images/eef64a585efa1d376ba3eb8ee452674f01d6e40b.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    },
+    {
+        "id":20,
+        "text":"立即购买",
+        "src":"./images/39985c98cf84921c434a9f9f07580cb534c8b37d.jpg",
+        "figureTitle":"55G10U  55吋4K超薄 AI全景智能",
+        "figureColor":"3GB+64GB大内存  双频WiFi  免遥控远场语音",
+        "price":"￥3999.00"
+    }
+]
