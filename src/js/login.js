@@ -1,28 +1,63 @@
 $(document).ready(function(){
     var show_num = [];
     draw(show_num);
+    var flag=false;//验证码的标志量
+    var pflage=false;//密码一致的标志量
 
+    //验证两次密码是否输入一致
+    $("#repassword").on('blur',function(){
+        var p1=$("#password").val();
+        var p2=$("#repassword").val();
+        if(p1==p2){
+            pflage=true;
+        }
+        else{
+            pflage=false;
+            alert("两次密码输入不一致");
+        }
+    })
+
+    //更改验证码
     $("#change").on('click',function(){
         draw(show_num);
-    })
+    });
+
+    //验证验证码
     $("#ucode").on('blur',function(){
         var val = $("#ucode").val().toLowerCase();
         var num = show_num.join("");
         if(val==''){
-            alert('请输入验证码！');
+            alert('请输入验证码!');
         }else if(val == num){
-            alert('提交成功！');
-            $(".input-val").val('');
-            draw(show_num);
-
+            flag=true;
         }else{
             alert('验证码错误！请重新输入！');
             $(".input-val").val('');
             draw(show_num);
+            flag=false;
         }
-    })
+    });
+    //用户注册
+    $("#registers").on("click",function(){
+        console.log(flag);
+             if($("#uname").val()!="" && $("#password").val()!="" &&flag===true){
+            addUser($("#uname").val(),$("#password").val());
+        
+        }
+    });
+
+    //用户登录
+    $("#logins").on("click",function(){
+        console.log(flag);
+        if($("#uname").val()!="" && $("#password").val()!="" &&flag===true){
+            checkLogin($("#uname").val(),$("#password").val());
+   
+   }
+    });
 
 });
+
+//canvas绘制验证码
 function draw(show_num) {
     var canvas_width=$('#canvas').width();
     var canvas_height=$('#canvas').height();
@@ -52,25 +87,46 @@ function draw(show_num) {
         context.rotate(-deg);
         context.translate(-x, -y);
     }
-    // for (var i = 0; i <= 5; i++) { //验证码上显示线条
-    //     context.beginPath();
-    //     context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
-    //     context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
-    //     context.stroke();
-    // }
-    // for (var i = 0; i <= 30; i++) { //验证码上显示小点
-    //     context.beginPath();
-    //     var x = Math.random() * canvas_width;
-    //     var y = Math.random() * canvas_height;
-    //     context.moveTo(x, y);
-    //     context.lineTo(x + 1, y + 1);
-    //     context.stroke();
-    // }
+   
 }
 
-// function randomColor() {//得到随机的颜色值
-//     var r = Math.floor(Math.random() * 256);
-//     var g = Math.floor(Math.random() * 256);
-//     var b = Math.floor(Math.random() * 256);
-//     return "rgb(" + r + "," + g + "," + b + ")";
-//}
+//创建用户类
+class User {
+    constructor(username,pwd) {
+      this.username=username;
+      this.pwd=pwd;
+    }
+}
+//用户注册
+function addUser(username,pwd){
+    var userList = JSON.parse(window.localStorage.getItem('user')||'[]');
+          //如果该已存在则提示用户已存在
+            for(var j=0;j<userList.length;j++){
+                if(userList[j].username==username){
+                    alert("该用户已存在!");
+                    return;
+                }
+            }
+            //第一次加入则增加一行显示
+            var user = new User(username,pwd);
+            userList.push(user);
+            //改变购物车列表以后要存入本地存储
+            window.localStorage.setItem("user",JSON.stringify(userList));
+          
+}
+
+//用户登录
+function checkLogin(username,pwd){
+    var userList = JSON.parse(window.localStorage.getItem('user')||'[]');
+    //如果该已存在则提示用户已存在
+    for(var j=0;j<userList.length;j++){
+        if(userList[j].username==username&&userList[j].pwd==pwd){
+            alert("登录成功");
+            return;
+        }
+        else{
+            alert("用户名或者密码错误!");
+            
+        }
+    }
+}
