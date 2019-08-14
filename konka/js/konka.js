@@ -1,51 +1,6 @@
-//获取ol的li，当li等于3的时候，第一个，第二个可点击，跳转到相应的页面
-//li等于2的时候，只有首页可以跳转
-/*var ol = document.querySelector('.headline');
-//添加点击事件跳转到相关页面
-ol.onclick = function(eve){
-    var e = eve || event;
-    var target = e.target || e.srcElement;
-    if(target.nodeName == "LI"){
-        
-    }
-}*/
-
-//点击获取导航表第一个ul的li内容，添加到ol最后
-/*var oul = document.getElementsByClassName("list-inline")[0];
-// console.log(oul);
-for(var i = 0; i < oul.length; i++){
-    oul[i].onclick = function(e){
-        var e = eve || event;
-        var target = e.target || e.srcElement;
-        if(target.nodeName == "LI"){
-            console.log(target);
-        }
-    }
-}*/
-
-// $(function(){
-//     $('.cols .figure').hover(function(){
-//         $(this).find('.price').hide();
-//         $(this).find('.wrapper').stop().fadeIn("slow")
-//     },function(){
-//       $(this).find('.price').stop().fadeIn("slow");
-//       $(this).find('.wrapper').hide();
-//     });
-// })
- //显示 筛选状态
-//  $('.gfilter-list dd').each(function(index, el) {
-//     if(($(this).find('.nolimit').length)!=0){
-//       if(($(this).find('.active').length)==0){
-//         $(this).find('.nolimit').addClass('active');
-//       }else{
-//         $(this).find('.nolimit').removeClass('active');
-//       }
-//     }else{
-//       return;
-//     }
-// });
 
 $(function(){
+
     $(".headline").find("li").each(function(i,dom){
         if($("li").length > 3){
             $("li:eq(3)>a").removeAttr('href');//去掉a标签中的href属性  
@@ -92,30 +47,25 @@ $(function(){
         $(".row").html(html);
     })
 
-    // $(".row").on("mouseover",".cols cola",function(){
-    //     // console.log(1);
-    //     $(".cols cola").animate({
-    //         width: "252",
-    //         height: "322",
-    //         marginTop:"-2px",
-            
-    //     },"slow")
-    // })
-    
-    $('.row .cols .cola').hover(function(){
+    // 图片动画效果
+    $(".row").on("mouseover",".cols",function(){
+        // console.log(1);
         $(this).find('.price').hide();
-        // .stop()停止所有在指定元素上正在运行的动画。
-        // .fadeIn("slow")通过不透明度的变化来实现所有匹配元素的淡入效果，并在动画完成后可选地触发一个回调函数。
+        $(this).find('.cart').show();
+        $(this).stop().animate("slow").css('box-shadow'," 0px 8px 8px rgb(201, 201, 201)").siblings("cols").animate("");
 
-        $(this).find('.cart').stop().fadeIn("slow")
-    },function(){
-      $(this).find('.price').stop().fadeIn("slow");
-      $(this).find('.cart').hide();
-    });
+    })
 
+    $(".row").on("mouseout",".cols",function(){
+        // console.log(1);
+        $(this).find('.price').show();
+        $(this).find('.cart').hide();
+        $(this).stop().animate({},300).css('box-shadow',"").siblings("cols").animate("");
+
+    })
 })
 
-//阴影
+// 阴影
 // $('.box.lifted').shadow('lifted');
 // var row = document.getElementsByClassName("row")[0];
 // // console.log(row);
@@ -123,7 +73,7 @@ $(function(){
 //     var e = eve || event;
 //     var target = e.target || e.srcElement;
 //     if(target.className == "cols cola"){
-//         // console.log(1);
+//         console.log(1);
 //         target.style.whidt = "252px";
 //         target.style.height = "322px";
 //         target.style.marginTop ="-3px";
