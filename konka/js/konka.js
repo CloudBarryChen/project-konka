@@ -37,14 +37,30 @@ $(function(){
                 <h4 class="figureTitle">${item.figureTitle}</h4>
                 <div class="figureColor">${item.figureColor}</div>
                 <p class="price">${item.price}</p>
-                <div class="cart">
-                    <a href="" id=${item.id}>加入购物车</a>
-                    <a href="" class="a2" id=${item.text}>立即购买</a>
+                <div id=${item.id} class="cart">
+                    <a  class="aClick" index=${item.id}>加入购物车</a>
+                    <a  class="a2 aClick" index=${item.text}>立即购买</a>
                 </div>
             </div>
             `
         })
         $(".row").html(html);
+
+        var cart = [];
+        $(".row").on("click",'.aClick',function(){
+            // console.log(1)
+            var id = $(this).attr("index");
+            $.get("./js/a.json",function(data){
+                data.forEach(function(item,index){
+                    // console.log(item)
+                    if(item.id == id){
+                        cart.push(item)
+                    }
+                })
+            })
+            // console.log(cart)
+            window.localStorage.setItem("cart",JSON.stringify(cart))
+        })
     })
 
     // 图片动画效果
@@ -63,6 +79,23 @@ $(function(){
         $(this).stop().animate({},300).css('box-shadow',"").siblings("cols").animate("");
 
     })
+
+    // var cart = [];
+    // $(".cart").each(function(index,item){
+    //     // console.log($(".cart"))
+    //     // console.log(2);
+    //     $(this).on("click",'a',function(){
+    //     console.log(1)
+    //     var id = $(this).attr("id");
+    //     $.get("./js/a.json",function(data){
+    //         data.forEach(function(index,item){
+    //             if(item.id == id){
+    //                 cart.push(item)
+    //             }
+    //         })
+    //     })
+    //     window.localStorage.setItem("cart",JSON.stringify(cart))
+    // })})
 })
 
 // 阴影
@@ -79,4 +112,4 @@ $(function(){
 //         target.style.marginTop ="-3px";
 //     }
 // }
-
+// console.log($(".cart"))

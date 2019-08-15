@@ -16,14 +16,17 @@ util = {
 }
 
 //定义一个商品的构造函数,可以创建一个商品对象:
-function Product(id,name,pic,price){
+function Product(id,text,src,figureTitle,figureColor,price,num){
     // {id:"";name:"";pic:"";num:"";price:""}
     this.id = id;
-    this.name = name;
-    this.pic = pic;
-    this.num = 1;
+    this.text = text;
+    this.src = src;
+    this.figureTitle = figureTitle;
+    this.figureColor = figureColor;
     this.price = price;
+    this.num = 1;
 }
+
 //1 生成一个购物车,可以展示购物车内的内容
 function renderCart(selector){
     //获取购物车所在的容器
@@ -72,7 +75,7 @@ renderCart('div');
 function addCartEvent(){
     // console.log(1);
     //选中所有加入购物车按钮
-    var addCartBtnS = document.querySelectorAll('.addCart');
+    var addCartBtnS = document.querySelectorAll('.cart');
     //给每个按钮添加事件,forEach是数组的方法
     for(var i = 0; i < addCartBtnS.length; i++){
         addCartBtnS[i].addEventListener('click',function(){
@@ -83,13 +86,13 @@ function addCartEvent(){
             var price = li.children[3].innerHTML;//获取商品的价格
             // console.log(id);
             //加入购物车列表数据,并展示在页面上
-            addProduct(id,name,pic,price)
+            addProduct(id,text,src,figureTitle,figureColor,price)
         })
     }
 }
 addCartEvent();
 
-function addProduct(id,name,pic,price){
+function addProduct(id,text,src,figureTitle,figureColor,price){
     var productList = util.getStorage();
     //如果该商品已经加入过购物车,则添加数量
     for(var j = 0; j < productList.length; j++){
@@ -102,7 +105,7 @@ function addProduct(id,name,pic,price){
         }
     }
     //第一次加入则增加一行显示
-    var product = new Product(id,name,pic,price);
+    var product = new Product(id,text,src,figureTitle,figureColor,price);
     productList.push(product);
     //改变购物车列表以后要存入本地存储
     util.setStorage(productList);
